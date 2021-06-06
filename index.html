@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcial 2</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href = "css/index.css" rel="stylesheet">
+    
+
+</head>
+<body>
+    <div class="contenedorPrincipal">
+        <div class="divs" id="encabezado">
+            <h1 id="nombreEmpresa">Cine Colombia</h1>
+            <p>Escoge tu película favorita</p>
+        </div>
+        <div class="divs" id= "contenedorDePeliculas">
+        </div></div>
+</body>
+</html>
+
+<!-- Conexion Firebase -->
+<script src="https://www.gstatic.com/firebasejs/8.6.5/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-analytics.js"></script>
+
+<script>
+   var firebaseConfig = {
+    apiKey: "AIzaSyD6xsK3sLfc4Sms7Cm5J0OTZHsnLTiQQHA",
+    authDomain: "parcialdos-cf067.firebaseapp.com",
+    projectId: "parcialdos-cf067",
+    storageBucket: "parcialdos-cf067.appspot.com",
+    messagingSenderId: "76825763046",
+    appId: "1:76825763046:web:aad0c7e8977dcb4acc6f27",
+    measurementId: "G-T961MWSXCB"
+  };
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+<script> const database = firebase.database(); </script>
+<script src = "componentes/Peliculas.js"></script>
+<script src= "js/index.js"></script>
